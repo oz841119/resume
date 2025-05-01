@@ -3,9 +3,9 @@ import styles from './Hero.module.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 export const Hero = () => {
     return (
-      <section className={clsx(styles.bg, 'w-full h-screen')}>
+      <section className={clsx(styles.bg, 'w-full h-screen min-h-[700px]')}>
         <div className="w-full h-full flex justify-center items-center">
-          <div className="animate__animated animate__fadeInBottomLeft w-3xl flex h-[530px]">
+          <div className="w-3xl flex h-[530px]">
             <div className={clsx('w-96 bg-slate-400 pt-11 flex flex-col items-center', styles.sw)}>
               <div className="w-48 h-48 rounded-full bg-white mb-8"></div>
               <div className="mb-6 text-center">
