@@ -7,7 +7,9 @@ export const Hero = () => {
         <div className="w-full h-full flex justify-center items-center">
           <div className="w-3xl flex h-[530px]">
             <div className={clsx('w-96 bg-slate-400 pt-11 flex flex-col items-center', styles.sw)}>
-              <div className="w-48 h-48 rounded-full bg-white mb-8"></div>
+              <div className="w-48 h-48 rounded-full bg-white mb-8">
+                <img src="/images/headshot.jpg" alt="profile" className="w-full h-full object-cover rounded-full" />
+              </div>
               <div className="mb-6 text-center">
                 <div className="text-3xl font-medium">陳奕里</div>
                 <div className="text-xl">Eli Chen</div>
