@@ -1,10 +1,9 @@
 import { Job } from "../../widgets/Job/Job"
-import { SectionTitle } from "../../widgets/SectionTitle/SectionTitle"
+import { Section } from "../../widgets/Section/Section"
 
 export const Experience = () => {
     return (
-      <section className="pt-8 bg-slate-50 py-12 h-screen min-h-[700px]">
-        <SectionTitle title="Experience" />
+      <Section className="bg-slate-50" title="Experience" id="experience">
         <div>
           <div className="flex flex-col items-center">
             <Job
@@ -13,7 +12,7 @@ export const Experience = () => {
               startText="2024.05"
               endText="Present"
               items={[
-                "Next、React、Wordpress Theme、Typescript",
+                "Next、Wordpress Theme、Typescript",
                 "開發電商管理系統、頁面編輯器、官方網站",
                 "程式碼重構"
               ]}
@@ -24,8 +23,8 @@ export const Experience = () => {
               startText="2023.10"
               endText="2024.05"
               items={[
-                "Vue3、Nuxt3、Typescript、C#、.NET、MongoDB、WinForm",
-                "與不同團隊進行各式專案開發，主要負責前端專案",
+                "Nuxt3、Typescript、C#、.NET、MongoDB、WinForm",
+                "與不同團隊進行各式專案開發，主要負責前端",
                 "各式鏈道公司內部系統(Web)、保全系統(WinForm)、後端 API 開發",
                 "在瀏覽器中串流多路監視器畫面"
               ]}
@@ -46,6 +45,6 @@ export const Experience = () => {
             />
           </div>
         </div>
-      </section>
+      </Section>
     )
 }

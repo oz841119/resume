@@ -1,5 +1,5 @@
-import { SectionTitle } from "../../widgets/SectionTitle/SectionTitle";
 import { ProgressBar } from "../../widgets/ProgressBar/ProgressBar";
+import { Section } from "../../widgets/Section/Section";
 
 const getCategoryIcon = (category: string) => {
   switch (category) {
@@ -56,18 +56,17 @@ export const Skills = () => {
       { name: "Node.js", proficiency: 60, color: "bg-green-600" }
     ],
     "Databases": [
-      { name: "MongoDB", proficiency: 60, color: "bg-green-700" },
-      { name: "PostgreSQL", proficiency: 60, color: "bg-blue-700" }
+      { name: "MongoDB", proficiency: 40, color: "bg-green-700" },
+      { name: "PostgreSQL", proficiency: 40, color: "bg-blue-700" }
     ],
     "Other Tools": [
       { name: "Git", proficiency: 80, color: "bg-orange-600" },
-      { name: "Docker", proficiency: 60, color: "bg-blue-600" }
+      { name: "Docker", proficiency: 40, color: "bg-blue-600" }
     ]
   };
 
   return (
-    <section className="pt-8 bg-slate-100 py-12 h-screen min-h-[700px]">
-        <SectionTitle title="Skills" />
+    <Section className="bg-slate-100" title="Skills" id="skills">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8">
           {Object.entries(skillsData).map(([category, skills], categoryIndex) => (
             <div key={categoryIndex}>
@@ -88,6 +87,6 @@ export const Skills = () => {
             </div>
           ))}
         </div>
-    </section>
+    </Section>
   );
 };
