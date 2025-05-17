@@ -44,10 +44,8 @@ export const Skills = () => {
       { name: "JavaScript", proficiency: 80, color: "bg-yellow-500" }
     ],
     "Frontend Technologies": [
-      { name: "React", proficiency: 80, color: "bg-cyan-500" },
-      { name: "Next.js", proficiency: 80, color: "bg-slate-700" },
-      { name: "Vue", proficiency: 75, color: "bg-emerald-500" },
-      { name: "Nuxt", proficiency: 75, color: "bg-green-600" },
+      { name: "React / Next", proficiency: 80, color: "bg-cyan-500" },
+      { name: "Vue / Nuxt", proficiency: 75, color: "bg-emerald-500" },
       { name: "Tailwind", proficiency: 70, color: "bg-sky-500" }
     ],
     "Backend Technologies": [
